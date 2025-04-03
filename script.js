@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  const registerButton = document.querySelector('.options button:first-child');
-  if (registerButton) {
-    registerButton.addEventListener('click', function() {
+  const loginButton = document.querySelector('.options button:first-child');
+  if (loginButton) {
+    loginButton.addEventListener('click', function() {
       const loginScreen = document.querySelector('.login');
       loginScreen.style.transition = 'opacity 0.3s ease-out';
       loginScreen.style.opacity = '0';
@@ -23,6 +23,20 @@ document.addEventListener('DOMContentLoaded', function() {
       setTimeout(function() {
         history.pushState({page: 'loginpage'}, 'Register', 'loginpage.html');
         window.location.href = 'loginpage.html';
+      }, 300);
+    });
+  }
+
+  const registerButton = document.querySelector('.options button:nth-child(2)');
+    if (registerButton) {
+    registerButton.addEventListener('click', function() {
+      const loginScreen = document.querySelector('.login');
+      loginScreen.style.transition = 'opacity 0.3s ease-out';
+      loginScreen.style.opacity = '0';
+
+      setTimeout(function() {
+        history.pushState({page: 'registerpage'}, 'Register', 'registerpage.html');
+        window.location.href = 'registerpage.html';
       }, 300);
     });
   }
