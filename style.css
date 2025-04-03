@@ -58,6 +58,7 @@ body{
   margin-top:65px;
   z-index: 5;
   background: linear-gradient(#2A2A28, black);
+  position: relative;
 }
 
 /*Welcome Screem*/
@@ -696,9 +697,110 @@ input, select, textarea{
   margin:10px;
 } */
 
+/* Homepage */
+.homescreen-container{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
 
+.homescreen-container-header{
+  display:flex;
+  color:white;
+  font-size:10px;
+  margin-top:25px;
+  margin-left:25px;
+  margin-right:25px;
+}
 
+.homescreen-container-parts{
+  display:flex;
+  flex-direction: column;
+  margin:15px;
+}
 
+.partone{
+  display:flex;
+  flex-direction:column;
+  background-color:#353434;
+  border-radius:25px;
+  padding:20px;
+  color:white;
+  margin-bottom:13px;
+}
 
+.partone p{
+  margin:5px;
+}
 
+.parttwo{
+  display:flex;
+  flex-direction:column;
+  background-color:#353434;
+  border-radius:25px;
+  padding:20px;
+  color:white;
+  margin-bottom:13px;
+}
 
+.parttwo p{
+  margin:5px;
+}
+
+.partthree{
+  display:flex;
+  flex-direction:column;
+  background-color:#353434;
+  border-radius:25px;
+  padding:20px;
+  color:white;
+  margin-bottom:13px;
+}
+
+.partthree p{
+  margin:5px;
+}
+
+.font-bold{
+  font-size:19px;
+  margin:5px;
+}
+
+/* Code Container Start */
+
+/* Code Container End */
+
+/* Navbar */
+
+.navbar-container{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+.navbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 88%;
+  height: 50px;
+  background-color: #222222;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index:-100;
+  overflow:hidden;
+  border-radius:25px;
+  margin-left:5%;
+  margin-bottom:8%;
+}
+
+.navbar i{
+  justify-content: center;
+  font-size:25px;
+  color:#55a5f5;
+  padding:15px;
+  padding-bottom:17px;
+  width:20px;
+  height:20px;
+}

@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Healthalise</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-  <div class = "phone">
-    <div class = "homescreen-container">
-        <div class = "homescreen-container-header">
-            <div class = "homescreen-container-header-pfp">
-
-            </div>
-            <div class = "homescreen-container-header-title">
-                <span id="displayName"></span>
-            </div> 
+  <div class="phone">
+    <div class="homescreen-container">
+      <div class="homescreen-container-header">
+        <h1 class="text-lg">Welcome {Username}</h1>
+      </div>
+      <div class="homescreen-container-parts">
+          <div class="partone">
+              <h2 class="font-bold">Fitness Stats</h2>
+              <p>Steps: {VarSteps}</p>
+              <p>Calories: {VarCal}</p>
+          </div>
+          <div class="parttwo">
+              <h2 class="font-bold">Activity</h2>
+              <p>Connect Watch To Start Activity</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+          </div>
+          <div class="partthree">
+              <h2 class="font-bold">Leaderboard</h2>
+              <p>Leaderboard Coming Soon</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+          </div>
+      </div>
+      <div class = "navbar-container">
+        <div class="navbar">
+            <a href="homescreen.html" class="home">
+              <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="#" class="personal">
+              <i class="fa-solid fa-person"></i>
+            </a>
+            <a href="#" class="settings">
+              <i class="fa-solid fa-gear"></i>
+            </a>
         </div>
+      </div>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/db7a8b1186.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
+
